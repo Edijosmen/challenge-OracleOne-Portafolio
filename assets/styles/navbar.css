@@ -1,0 +1,47 @@
+header{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.headb{
+    display: flex;
+    justify-content: space-between;
+    background-color:#26262C;
+}
+.logo{
+    height: auto;
+    width: 100px;
+}
+.navb{
+ display: flex;
+ align-items: center;
+}
+.navb__lista{
+    display: flex;
+}
+.navb__item{
+    list-style: none;
+    margin-left: 2rem;
+}
+.navb__link{
+    text-decoration: none;
+    font-family: 'medium';
+    font-size: 20px;
+    color: #F2F4F5;
+}
+.navb__link:hover{
+    border-bottom: 4px solid #2CCAB9;
+    transition: all 0.15s ease;
+    color: #2CCAB9;
+}
+@media screen and (max-width:768px) {
+    .navb__item{
+        display: none;
+    }  
+    .email{
+        display: flex;
+    }
+    .headb{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,90 @@
+.contact{
+  display: flex;
+  margin: 5rem;
+}
+.contact__form{
+  background-color:#dfecea;
+  padding: 3rem 5rem;
+}
+.contact__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #030428;
+}
+.form__head-title{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form__head-detail{
+  font-size: 20px;
+  font-family: 'raleway';
+  color: #030428;
+}
+.form__btn{
+  text-align: center;
+}
+.btn__enviar{
+  color: #2951D5 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0,0,0,0);
+  border: 1px solid;
+  border-color: #2951D5;
+  transition: all 1s ease;
+}
+.btn__enviar:hover{
+  background: #2CCAB9;
+  color: #fff !important;
+  border-color: #2CCAB9;
+}
+.input-container {
+    font-weight: var(--font-input);
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+  
+  }
+  .input {
+    box-sizing: border-box;
+    border-bottom: 1px solid #030428;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+    background-color:#dfecea;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  } 
+  .input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  .input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+    transition: all 0.25s;
+  }
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  .contact{
+    flex-direction: column;
+    margin: 0;
+  }
+}

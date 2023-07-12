@@ -1,0 +1,36 @@
+
+.skill__title{
+    text-align: center;
+    font-family: 'medium';
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.skill__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.skill__item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 250px;
+    background-color:#fff; 
+    justify-content: center;
+    align-items: center;
+}
+.skill__img{
+   width: 100px;
+    height: auto;
+}
+.skill__name{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Kanit';
+}

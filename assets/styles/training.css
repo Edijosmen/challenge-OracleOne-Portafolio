@@ -1,0 +1,117 @@
+.training{
+    background: url("/assets/img/fondo-portafolio-skill.png") no-repeat ;
+    background-size: 100% 100%;
+    padding-bottom: 5rem;
+}
+.training__title{
+    text-align: center;
+    font-family: 'medium';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.training__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.training__container-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 250px;
+    background-color:#fff; 
+    justify-content: center;
+    align-items: center;
+    box-sizing:border-box;
+}
+.training__img{
+    width: 200px;
+    height: auto;
+}
+.training__container-title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Kanit';
+}
+.training__container-anio{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Kanit';
+    color: #2951D5;
+}
+.nocountry{
+    background-color:#030428; 
+}
+.courses{
+    display: flex;
+    background-color:#030428;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+}
+.courses__item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+.courses__img{
+    width: 100%;
+}
+.courses__item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:start;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.courses__udemy{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.item2__course-title{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    width: auto;
+}
+.item2__course-anio{
+    color:#2951D5 ;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+  .courses{
+    flex-direction: column;
+    margin: 0;
+  }
+  .training__container{
+    display: auto;
+  }
+  .training__container-item{
+    box-sizing:border-box;
+}
+    .courses__item1{
+        width: auto;
+    }
+    .courses__item2{
+        width: auto;
+    }
+    .item2__course{
+        display: flex;
+        flex-direction: column;
+    }
+}

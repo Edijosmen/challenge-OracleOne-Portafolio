@@ -1,0 +1,120 @@
+
+.experiencia__title{
+    text-align: center;
+    margin: 3rem 0;
+}
+.experiencia__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 40px;
+}
+.experiencia__container-item{
+    display: flex;
+    background-color: #dfecea;
+}
+.experience__container-img{
+    width: 60%;
+}
+.descripcion{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+.descripcion__title{
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 30px;
+}
+.description__parrafo{
+    font-family:'raleway';
+    font-size: 20px;
+    text-align: start;
+    font-weight: bold;
+    color:#858594;
+}
+.info__link{
+    color: #2951D5;
+}
+.technology{
+    color: #464646
+}
+.descripcion__suptitle{
+    font-size: 20px;
+
+    color: #030428;
+}
+.btn{
+    padding: 2rem 0;
+}
+.btn__repositorio{ 
+    color: aliceblue!important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background-color: #2951D5;
+    border: 1px solid;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+.btn__repositorio:hover{
+    background: #2CCAB9;
+    color: #fff !important;
+    border-color: #2CCAB9;
+}
+.btn__demo{
+    color: #2951D5 !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 1px solid;
+    border-color: #2951D5;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+.btn__demo:hover{
+    background: #2CCAB9;
+    color: #fff !important;
+    border-color: #2CCAB9;
+}
+
+@media screen and (max-width:768px) {
+    .experiencia__container{
+        background-color: #DFECEA;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2rem;
+    }
+    .experiencia__container-item{
+        flex-direction: column;
+    }
+    .experience__container-img{
+        width: 100%;
+    }
+    .descripcion{
+        width: 100%;
+        margin: 0;
+    }
+    .experience-show{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience{
+        display: none;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

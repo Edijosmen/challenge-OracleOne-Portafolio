@@ -1,0 +1,87 @@
+.presentation{
+    background: url(/assets/img/fondo-presentations.png) ;
+    background-size: 100% 100%;
+    height: calc(100vh - 75px);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+.descriptions{
+    display: flex;
+}
+.descriptions__item1{
+    width: 70%;
+    padding-right: 10px;
+}
+.descriptions__item2{
+    width: 30%;
+}
+.img_avatar{
+    width: 100%;
+    height: auto; 
+}
+.descriptions__title{
+    font-family: 'Righteous', cursive;
+    font-size:4.5rem;
+    font-weight: bold;
+    color: #26262C;
+}
+.descriptions__titlename{
+    color: #2951D5;
+}
+.descriptions__detail{
+    font-family:'raleway','regular';
+    color: #464646;
+    font-size: 20px;
+}
+.redes_sociales{
+    display: flex;
+    width: 70%;
+    justify-content: start;
+
+}
+.redes_sociales__github {
+    display: flex;
+   align-items: center;
+   padding-right: 5px;
+}
+.redes_sociales__linkedin {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+.redes_sociales__cv {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+.redes_sociales__github img{
+    width: 30px;
+    padding-right: 5px;
+}
+.redes_sociales__linkedin img{
+    width: 30px;
+    padding-right: 5px;
+}
+.redes_sociales__cv img{
+    width: 30px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .descriptions{
+        flex-direction: column;
+    }
+    .descriptions__title{
+      
+        font-size:1.5rem;
+        
+    }
+    .descriptions__item1{
+        width: 100%;
+       
+    }
+    .descriptions__item2{
+        width: 100%;
+    }
+}
