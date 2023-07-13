@@ -1,28 +1,36 @@
 
-const buttonWalkingDog = document.querySelector("[data-click-walkingDog]");
-const buttonEat = document.querySelector("[data-click-eat]");
-const buttonBonplan = document.querySelector("[data-click-bonplan]");
-const buttonPortafolio = document.querySelector("[data-click-portafolio");
+const buttonWalkingDog = document.querySelectorAll("[data-click-walkingDog]");
+const buttonEat = document.querySelectorAll("[data-click-eat]");
+const buttonBonplan = document.querySelectorAll("[data-click-bonplan]");
+const buttonPortafolio = document.querySelectorAll("[data-click-portafolio]");
 
-buttonWalkingDog.addEventListener("click",e => {
+
+buttonWalkingDog.forEach(button =>{
+  button.addEventListener("click",e => {
     e.preventDefault();
-    mostrarWalkingDog();
-   
+    mostrarWalkingDog(); 
 });
+})
 
-buttonEat.addEventListener("click",e => {
+buttonEat.forEach(button =>{
+  button.addEventListener("click",e => {
     e.preventDefault();
     mostrarLetseat();
-   
 });
-buttonBonplan.addEventListener("click",e => {
+});
+
+buttonBonplan.forEach(button =>{
+  button.addEventListener("click",e => {
     e.preventDefault();
     mostrarBonplan();
    
 });
-buttonPortafolio.addEventListener("click",e => {
-  e.preventDefault();
-  mostrarPortafolio();
+});
+buttonPortafolio.forEach(button =>{
+  button.addEventListener("click",e => {
+    e.preventDefault();
+    mostrarPortafolio();
+  });
 });
 function mostrarWalkingDog() {
     Swal.fire({
